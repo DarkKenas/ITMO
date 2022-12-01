@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title> navigator </title>
+        <script language="javascript">
+            function welcome(){ 
+            var appname=navigator.appName
+            var appver=navigator.appVersion
+            window.alert("Здравствуйте! Вы используете " + 
+            appname + appver + ". Вы будете перенаправлены.");
+            }
+        </script>
+    </head>
+    <body onLoad="welcome()">
+        <script type="text/JavaScript">
+            var locate = navigator.appName;
+            if (locate=="Microsoft Internet Explorer") {
+                location.href = "./Ex1.html";
+            }
+            else {
+                location.href = "./Ex3.html";
+            }
+        </script>
+    </body>
+</html>
