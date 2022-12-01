@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>array</title>
+        <script language="JavaScript">
+            function Subjects(){
+            subjects=new Array("история"," обществознание"," русский язык"," литература"," химия"," физика"," математика");
+            as=new Array();
+            as=subjects.slice(4,7);
+            hs=new Array();
+            hs=subjects.slice(0,4);
+            document.write("Гуманитарные предметы:<br>"+hs+"<br><br>");
+            document.write("Предметы из раздела технических наук:<br>"+as);
+            }
+        </script>
+    </head>
+    <body>
+            <a href="javascript:Subjects()">Нажми меня!</a>
+    </body>
+</html>
