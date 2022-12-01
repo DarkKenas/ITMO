@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>for</title>
+        
+    </head>
+    <body>
+        <h1>Пример простой</h1>
+        <table>
+            <thead>
+				<tr>
+					<th>Степень</th>
+					<th>Результат</th>
+				</tr>
+			</thead>
+        <script language="JavaScript" type="text/JavaScript">
+            var x, y;
+            x=parseInt(prompt("Введите основание степени",''));
+            y=parseInt(prompt("Введите максимальное значение степени",''));
+            for (var i=0; i<=y; i++){
+            var p = Math.pow(x, i);
+            document.write("<tr><th>"+x+"<sup>"+i+"</sup></th><th>"+p+"</th></tr>");
+            }
+        </script>
+        </table>
+        <style type="text/css">
+            table {
+             border-collapse: collapse;
+            }
+            td, th {
+             border: 1px solid black;
+            }
+        </style>
+    </body>
+</html>
