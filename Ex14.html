@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title> Test Form </title>
+        <script>
+            function name123(){
+                if (txt.value==""){
+                    alert("Введите ваше имя");
+                    x="1";
+                    txt.focus();
+                }
+                else{
+                    if (pass1.value.length <= 4){
+                        alert("Пароль слишком короткий");
+                        x="1";
+                        pass1.focus();
+                }
+                else{
+                    if (pass1.value!==pass2.value){
+                        alert("Пароли не совпадают");
+                        x="1";
+                        pass2.focus();
+                }
+                else{
+                    if (mail.value==""){
+                        alert("Введите ваш E-mail");
+                        x="1";
+                        mail.focus();
+                }
+                else{
+                    if (txtarea.value.length <= 10){
+                        alert("Сообщение короткое, опишите подробнее");
+                        x="1";
+                        txtarea.focus();
+                }
+                }}}}
+                if(x==1){
+                    return false;
+            }
+            else {
+                return true;
+            }
+        }
+            function change12(){
+            x=2;
+        }
+        </script>
+    </head>
+    <body>
+        <p style="border-bottom: 1px dashed rgb(0, 0, 0); width: 105px;">Начало формы</p>
+        <form onsubmit="return name123()">
+            Ваше имя: <input onchange="change12()" id="txt" type="text"/><br/><br/>
+            Пароль:<input onchange="change12()" id="pass1" type = "password"/><br/><br/>
+            Подтверждение пароля:<input onchange="change12()" id="pass2" type = "password"/><br/><br/>
+            Электронный адрес:<input onchange="change12()" id="mail" type = "email"/><br/><br/>
+            Тема сообщения:<input onchange="change12()" type="text" name="topic"/><br/><br/>
+            Сообщение:<textarea onchange="change12()" id="txtarea"></textarea><br/>
+            <input type="submit" name = "sub" value="Отправить"/>
+            <input type = "reset" name = "reset" value = "Очистить поле!" /><br/>
+        <p style="border-bottom: 1px dashed rgb(0, 0, 0); width: 95px;">Конец формы</p>
+        </form>
+    </body>
+</html>
